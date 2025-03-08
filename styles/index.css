@@ -4,27 +4,46 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("/images/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ajustado para ocupar toda a altura da tela */
+  display: flex;
+  margin: 0 10px;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
 .menu {
-  background-color: #333;
-  padding: 10px 20px;
+  padding: 20px; /* Melhor controle de espaçamento */
+  background-color: rgba(0, 0, 0, 0.5); /* Adicionado fundo semitransparente para melhorar legibilidade */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
 .menu ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column; /* Flexbox para layout vertical */
+  align-items: center; /* Centraliza os itens */
 }
 
 .menu li {
-  margin: 0 15px;
+  margin: 10px 0; /* Espaçamento entre os itens */
 }
 
 .menu a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   padding: 10px 15px;
-  transition: 0.3s;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s; /* Adicionando transição para o background */
+  border-radius: 5px; /* Bordas arredondadas nos links */
+}
+
+.menu a:hover {
+  color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.3); /* Fundo leve ao passar o mouse */
 }
